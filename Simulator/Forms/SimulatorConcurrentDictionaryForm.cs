@@ -1,9 +1,8 @@
 ﻿namespace Simulator
 {
-    using Simulator.Helpers;
+    using Simulator.Helpers.UI;
     using System;
     using System.Collections.Concurrent;
-    using System.Collections.Generic;
     using System.Threading;
     using System.Threading.Tasks;
     using System.Windows.Forms;

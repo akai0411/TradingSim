@@ -1,6 +1,6 @@
 ﻿namespace Simulator
 {
-    using Simulator.Helpers;
+    using Simulator.Helpers.UI;
     using Simulator.Models;
     using System;
     using System.Collections.Generic;
