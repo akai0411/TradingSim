@@ -24,5 +24,13 @@
             SimulatorConcurrentDictionaryForm newConcForm = new SimulatorConcurrentDictionaryForm();
             newConcForm.Show();
         }
+
+        private void btnBlockForm(object sender, System.EventArgs e)
+        {
+            SimulatorBlockingCollectionForm newBlockForm = new SimulatorBlockingCollectionForm();
+            newBlockForm.Show();
+        }
+
+ 
     }
 }

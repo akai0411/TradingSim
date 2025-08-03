@@ -1,5 +1,6 @@
 ﻿namespace Simulator
 {
+    using Simulator.Helpers;
     using System;
     using System.Collections.Concurrent;
     using System.Collections.Generic;
@@ -24,15 +25,7 @@
         public SimulatorConcurrentDictionaryForm()
         {
             InitializeComponent();
-            InitializeDataGridView();
-        }
-
-        private void InitializeDataGridView()
-        {
-            dataGridViewPrices.ColumnCount = 3;
-            dataGridViewPrices.Columns[0].Name = "Symbol";
-            dataGridViewPrices.Columns[1].Name = "Price";
-            dataGridViewPrices.Columns[2].Name = "Timestamp";
+            UIHelpers.InitializeMarketDataGrid(dataGridViewPrices);
         }
 
         private void SimulatorConcurrentDictionary_Load(object sender, EventArgs e)

@@ -1,5 +1,6 @@
 ﻿namespace Simulator
 {
+    using Simulator.Helpers;
     using System;
     using System.Collections.Generic;
     using System.Threading;
@@ -15,16 +16,9 @@
         public SimulatorBasicThreadForm()
         {
             InitializeComponent();
-            InitializeDataGridView();
+            UIHelpers.InitializeMarketDataGrid(dataGridViewPrices);
         }
 
-        private void InitializeDataGridView()
-        {
-            dataGridViewPrices.ColumnCount = 3;
-            dataGridViewPrices.Columns[0].Name = "Symbol";
-            dataGridViewPrices.Columns[1].Name = "Price";
-            dataGridViewPrices.Columns[2].Name = "Timestamp";
-        }
 
         private void SimulatorBasicThread_Load(object sender, EventArgs e)
         {

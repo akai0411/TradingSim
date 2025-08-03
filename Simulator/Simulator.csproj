@@ -46,12 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\UI\UIHelpers.cs" />
     <Compile Include="MarketData.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimulatorBlockingCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimulatorBlockingCollectionForm.Designer.cs">
+      <DependentUpon>SimulatorBlockingCollectionForm.cs</DependentUpon>
     </Compile>
     <Compile Include="SimulatorConcurrentDictionaryForm.cs">
       <SubType>Form</SubType>
@@ -69,6 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimulatorBlockingCollectionForm.resx">
+      <DependentUpon>SimulatorBlockingCollectionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SimulatorConcurrentDictionaryForm.resx">
       <DependentUpon>SimulatorConcurrentDictionaryForm.cs</DependentUpon>

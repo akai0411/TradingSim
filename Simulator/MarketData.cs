@@ -7,4 +7,5 @@ public class MarketData
     public DateTime Timestamp { get; set; }
 
     // Puedes agregar más propiedades si lo necesitas
+    public decimal PreviousPrice { get; set; } = 0m;
 }
