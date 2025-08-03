@@ -47,43 +47,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\UI\UIHelpers.cs" />
-    <Compile Include="MarketData.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="Models\MarketData.cs" />
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SimulatorBlockingCollectionForm.cs">
+    <Compile Include="Forms\SimulatorBlockingCollectionForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SimulatorBlockingCollectionForm.Designer.cs">
+    <Compile Include="Forms\SimulatorBlockingCollectionForm.Designer.cs">
       <DependentUpon>SimulatorBlockingCollectionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SimulatorConcurrentDictionaryForm.cs">
+    <Compile Include="Forms\SimulatorConcurrentDictionaryForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SimulatorConcurrentDictionaryForm.Designer.cs">
+    <Compile Include="Forms\SimulatorConcurrentDictionaryForm.Designer.cs">
       <DependentUpon>SimulatorConcurrentDictionaryForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="SimulatorBasicThreadForm.cs">
+    <Compile Include="Forms\SimulatorBasicThreadForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SimulatorBasicThreadForm.Designer.cs">
+    <Compile Include="Forms\SimulatorBasicThreadForm.Designer.cs">
       <DependentUpon>SimulatorBasicThreadForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SimulatorBlockingCollectionForm.resx">
+    <EmbeddedResource Include="Forms\SimulatorBlockingCollectionForm.resx">
       <DependentUpon>SimulatorBlockingCollectionForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SimulatorConcurrentDictionaryForm.resx">
+    <EmbeddedResource Include="Forms\SimulatorConcurrentDictionaryForm.resx">
       <DependentUpon>SimulatorConcurrentDictionaryForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SimulatorBasicThreadForm.resx">
+    <EmbeddedResource Include="Forms\SimulatorBasicThreadForm.resx">
       <DependentUpon>SimulatorBasicThreadForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -108,5 +108,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace Simulator.Helpers
+namespace Simulator.Helpers.UI
 {
     public static class UIHelpers
     {

@@ -1,6 +1,7 @@
 ﻿namespace Simulator
 {
     using Simulator.Helpers;
+    using Simulator.Models;
     using System;
     using System.Collections.Generic;
     using System.Threading;
@@ -18,7 +19,6 @@
             InitializeComponent();
             UIHelpers.InitializeMarketDataGrid(dataGridViewPrices);
         }
-
 
         private void SimulatorBasicThread_Load(object sender, EventArgs e)
         {
